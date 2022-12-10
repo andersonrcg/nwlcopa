@@ -63,4 +63,16 @@ Write it Later.
 
 ## Server
 
-Write it Later.
+For running the server following the nexts steps:
+
+```
+cd server
+```
+
+```
+npm install
+```
+
+```
+npm run dev
+```
