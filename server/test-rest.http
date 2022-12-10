@@ -1,0 +1,38 @@
+GET http://localhost:3333/pools/count HTTP/1.1
+
+###
+
+GET http://localhost:3333/me HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+
+###
+
+GET http://localhost:3333/users/count HTTP/1.1
+
+###
+
+GET http://localhost:3333/guesses/count HTTP/1.1
+
+###
+
+POST http://localhost:3333/pools HTTP/1.1
+content-type: application/json
+
+{
+    "title": "TESTE"
+}
+
+###
+
+GET http://localhost:3333/pools/{id}/games HTTP/1.1
+
+###
+
+POST http://localhost:3333/pools/{id}/games/{id} HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+content-type: application/json
+
+{
+    "firstTeamPoints": 1,
+    "secondTeamPoints": 2
+}
